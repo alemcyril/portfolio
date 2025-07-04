@@ -131,7 +131,7 @@ const Projects = () => (
               alt={project.name}
               style={imgStyle}
               onError={(e) =>
-                (e.target.src = "/src/assets/images/placeholder.jpg")
+                (e.target.src = "/src/assets/Pfp.jpg")
               }
             />
             <h3
