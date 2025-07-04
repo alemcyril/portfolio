@@ -1,4 +1,5 @@
 import React from "react";
+import Pfp from "../assets/Pfp.jpg";
 
 const particles = Array.from({ length: 8 });
 
@@ -130,9 +131,7 @@ const Projects = () => (
               src={project.image}
               alt={project.name}
               style={imgStyle}
-              onError={(e) =>
-                (e.target.src = "/src/assets/Pfp.jpg")
-              }
+              onError={(e) => (e.target.src = Pfp)}
             />
             <h3
               style={{
