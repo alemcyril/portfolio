@@ -1,19 +1,24 @@
 import React from "react";
-import Pfp from "../assets/Pfp.jpg";
+import stylemateImg from "../assets/projects/stylemate.png";
+import fuelTrackerImg from "../assets/projects/fuel-tracker.png";
+import jinaAnalyzerImg from "../assets/projects/jina-analyzer.png";
+import memeQuizImg from "../assets/projects/meme-quiz.png";
+import transactionViewerImg from "../assets/projects/transaction-viewer.png";
+import ferareImg from "../assets/projects/ferare.png";
 
 const particles = Array.from({ length: 8 });
 
 const projects = [
   {
     name: "StyleMate",
-    image: "/src/assets/projects/stylemate.png",
+    image: stylemateImg,
     description: "Smart companion for personalised outfit recommendations.",
     github: "https://github.com/alemcyril/stylemate",
     site: "", // under development
   },
   {
     name: "Fuel Tracker",
-    image: "/src/assets/projects/fuel-tracker.png",
+    image: fuelTrackerImg,
     description:
       "A web application that displays fuel prices across different towns in Kenya.",
     github: "https://github.com/alemcyril/fuel-tracker",
@@ -21,7 +26,7 @@ const projects = [
   },
   {
     name: "Jina Analyzer",
-    image: "/src/assets/projects/jina-analyzer.png",
+    image: jinaAnalyzerImg,
     description:
       "A web application that helps users discover the cultural heritage behind Kenyan names.",
     github: "https://github.com/alemcyril/jina-analyzer",
@@ -29,7 +34,7 @@ const projects = [
   },
   {
     name: "Kenyan Memes Quiz",
-    image: "/src/assets/projects/meme-quiz.png",
+    image: memeQuizImg,
     description:
       "A fun and interactive quiz about popular Kenyan memes, built with React and Vite.",
     github: "https://github.com/alemcyril/kenyan-meme-quiz",
@@ -37,7 +42,7 @@ const projects = [
   },
   {
     name: "Transaction Viewer",
-    image: "/src/assets/projects/transaction-viewer.png",
+    image: transactionViewerImg,
     description:
       "A responsive web application that displays transaction fees for Kenyan mobile money services.",
     github: "https://github.com/alemcyril/transaction-viewer",
@@ -45,7 +50,7 @@ const projects = [
   },
   {
     name: "Ferare Group",
-    image: "/src/assets/projects/ferare.png",
+    image: ferareImg,
     description: "Corporate website for a diversified African conglomerate .",
     github: "", // private repo
     site: "https://feraregroup.com/",
@@ -131,7 +136,7 @@ const Projects = () => (
               src={project.image}
               alt={project.name}
               style={imgStyle}
-              onError={(e) => (e.target.src = Pfp)}
+              onError={(e) => (e.target.src = stylemateImg)}
             />
             <h3
               style={{
